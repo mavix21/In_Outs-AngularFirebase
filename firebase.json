@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "auth-redux",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "in-outs-app": {
+      "hosting": {
+        "auth-redux": [
+          "in-outs-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "in-outs-app"
+  }
+}

@@ -35,6 +35,9 @@ dependencies:
   '@ngrx/store':
     specifier: ^17.2.0
     version: 17.2.0(@angular/core@17.3.4)(rxjs@7.8.1)
+  '@ngrx/store-devtools':
+    specifier: ^17.2.0
+    version: 17.2.0(@ngrx/store@17.2.0)(rxjs@7.8.1)
   bootstrap:
     specifier: ^5.3.3
     version: 5.3.3(@popperjs/core@2.11.8)
@@ -2738,6 +2741,17 @@ packages:
     dependencies:
       call-bind: 1.0.7
     dev: true
+
+  /@ngrx/store-devtools@17.2.0(@ngrx/store@17.2.0)(rxjs@7.8.1):
+    resolution: {integrity: sha512-ig0qr6hMexZGnrlxfHvZmu5CanRjH7hhx60XUbB5BdBvWJIIRaWKPLcsniiDUhljAD87gvzrrilbCTiML38+CA==}
+    peerDependencies:
+      '@ngrx/store': 17.2.0
+      rxjs: ^6.5.3 || ^7.5.0
+    dependencies:
+      '@ngrx/store': 17.2.0(@angular/core@17.3.4)(rxjs@7.8.1)
+      rxjs: 7.8.1
+      tslib: 2.6.2
+    dev: false
 
   /@ngrx/store@17.2.0(@angular/core@17.3.4)(rxjs@7.8.1):
     resolution: {integrity: sha512-7wKgZ59B/6yQSvvsU0DQXipDqpkAXv7LwcXLD5Ww7nvqN0fQoRPThMh4+Wv55DCJhE0bQc1NEMciLA47uRt7Wg==}

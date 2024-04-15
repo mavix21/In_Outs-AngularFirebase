@@ -64,17 +64,28 @@
             </div>
 
             <div class="form-group">
+              @if (loading) {
+              <button
+                class="btn btn-primary submit-btn btn-block"
+                disabled
+                type="button"
+              >
+                <i class="fa fa-spin fa-sync"></i>
+                Loading...
+              </button>
+              } @else {
               <button
                 class="btn btn-primary submit-btn btn-block"
                 [disabled]="registerForm.invalid"
                 type="submit"
               >
-                Crear cuenta
+                Register
               </button>
+              }
             </div>
             <div class="text-block text-center my-3">
               <span class="text-small font-weight-semibold"
-                >ya tienes una cuenta?</span
+                >Already have an account?</span
               >
               <br />
               <a routerLink="../login" class="text-black text-small">Login</a>
